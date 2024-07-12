@@ -1,0 +1,150 @@
+/* main page  styling */
+
+@media only screen and (max-width: 1268px) {
+  header h2 {
+    padding: 0 25px;
+  }
+
+  #navbar a {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header h2 {
+    padding: 0 15px;
+  }
+
+  #navbar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    transition: 0.2s;
+    background: black;
+    z-index: 1;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  #navbar a {
+    display: block;
+    width: fit-content;
+    margin: 70px auto 0 auto;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .bar {
+    display: block;
+    padding: 0 20px;
+    cursor: pointer;
+    height: fit-content;
+  }
+
+  .heading {
+    left: 180px;
+  }
+
+  .dropdown {
+    left: 300px;
+  }
+}
+
+#navbar.show {
+  height: auto;
+}
+
+#navbar.show a {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 763px) {
+  .heading {
+    left: 200px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .dropdown {
+    left: 250px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  .heading {
+    left: 200px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  span {
+    margin-left: 40px;
+    font-size: 12px;
+  }
+
+  .dropdown {
+    left: 150px;
+  }
+
+  #cuisines h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .heading {
+    left: 150px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  span {
+    margin-left: 40px;
+    font-size: 12px;
+  }
+
+  .dropdown {
+    left: 100px;
+  }
+
+  #cuisines h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .heading {
+    left: 80px;
+  }
+
+  .dropdown {
+    left: 70px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .heading {
+    left: 50px;
+  }
+
+  .heading h1 {
+    font-size: 0.9rem;
+  }
+
+  .dropdown {
+    left: 40px;
+  }
+}

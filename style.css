@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("zomatomainimage.avif");
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+  background-size: cover;
+}
+
+header h2 {
+  height: 90px;
+  font-size: 30px;
+  line-height: 4rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 100px;
+}
+
+#navbar {
+  height: 90px;
+  max-width: 100%;
+  margin-left: 300px;
+}
+
+#navbar a {
+  font-size: 25px;
+  line-height: 4rem;
+  text-transform: capitalize;
+  padding: 0 50px;
+  color: white;
+}
+
+.bar {
+  line-height: 4rem;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
+.heading {
+  position: relative;
+  left: 550px;
+  top: -250px;
+  /* border: 2px solid red; */
+  width: fit-content;
+  padding: 15px 0px;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+span {
+  margin-left: 80px;
+
+  font-size: 27px;
+}
+
+#about {
+  margin: 40px auto;
+
+  width: 100%;
+  /* position: relative;
+ left:400px;
+ top:0px; */
+}
+
+#about h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  width: auto;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+#about p {
+  font-size: 25px;
+  width: auto;
+  color: black;
+  /* text-transform: capitalize; */
+  text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* margin-bottom: 40px; */
+}
+
+#cuisines {
+  width: 100%;
+  height: 500px;
+  /* border: 2px solid red; */
+  margin: 40px auto;
+}
+
+#cuisines h1 {
+  width: auto;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  left: 650px;
+  /* border: 2px solid black; */
+  text-align: center;
+  margin-top: 100px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* box-shadow: 2px solid black; */
+}
+
+.dropbtn {
+  font-size: 25px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 50px;
+  line-height: 4rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: black; */
+  /* background-color: white; */
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  /* color: black; */
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  /* background-color:white; */
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ITALIAN CUISINE STYLING */
+
+#italian {
+  background-image: url(italian-main.jpg);
+}
+
+/* Italian cuisine dishes styling */
+
+.dish-section {
+  /* border-bottom: 2px solid violet; */
+  width: 100%;
+  height: 700px;
+  padding: 30px 50px;
+}
+
+.dish-section h2 {
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.dish-section img {
+  height: 500px;
+  width: 600px;
+  background-size: cover;
+  float: inline-start;
+}
+
+.dish-section p {
+  font-size: 20px;
+  margin: 150px 0;
+  padding: 20px 0;
+}
+
+#Spaghetticarbonara img {
+  float: inline-end;
+}
+
+#Risotto img {
+  float: inline-end;
+}
+
+/* CHINESE CUISINE STYLING */
+
+#Chinese {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("chinese-cusinejpg.jpg");
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+  background-size: cover;
+}
+
+.main-heading h2 {
+  position: relative;
+  left: 380px;
+  top: 200px;
+  width: fit-content;
+  /* margin: auto auto; */
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+
+  text-shadow: 0 0 35px #ff0000, 0 0 40px #0000ff;
+}
+
+#HotPot img {
+  float: inline-end;
+}
+
+#ChowMein img {
+  float: inline-end;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-heading h2 {
+    right: 100px;
+
+    font-size: 3rem;
+    width: fit-content;
+  }
+
+  .dish-section {
+    display: grid;
+    gap: 20px;
+    height: auto;
+  }
+
+  .dish-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .dish-section p {
+    max-width: 100%;
+    height: auto;
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main-heading h2 {
+    font-size: 1.5rem;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-heading h2 {
+    position: absolute;
+    margin-left: -130px;
+    font-size: 1.2rem;
+  }
+}
+
+/* INDIAN CUISINE  */
+
+#Indian {
+  background-image: url(indian-cusine\ jpg.jpg);
+}
+
+#Biryani img {
+  float: inline-end;
+}
+
+#MasalaDosa img {
+  float: inline-end;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-heading h2 {
+    left: 250px;
+  }
+}
+
+/* Japanese cuisine */
+
+#Japanese {
+  background-image: url(japanese.jpg);
+}
+
+#Hakata-Ramen img {
+  float: inline-end;
+}
+
+#Tonkotsu-Ramen img {
+  float: inline-end;
+}
+
+/* Mexican cuisine */
+
+#Mexican {
+  background: url(mexiacn.jpg);
+}
+
+#ChilesenNogada img {
+  float: inline-end;
+}
+
+#EloteLoco img {
+  float: inline-end;
+}

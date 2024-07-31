@@ -106,7 +106,7 @@ h1 {
   .cusines h1,
   .cuisine-dish h1 {
       font-size: 2.3rem;
-      color: rgb(139, 196, 40);
+      color: black;
       margin: 50px 0 ;
       text-transform: capitalize;
   }

@@ -1,150 +1,268 @@
-/* main page  styling */
-
-@media only screen and (max-width: 1268px) {
-  header h2 {
-    padding: 0 25px;
-  }
-
-  #navbar a {
-    padding: 0 25px;
-  }
-}
+/* Responsive media-query start */
 
 @media only screen and (max-width: 900px) {
-  header h2 {
-    padding: 0 15px;
+  .bar {
+    display: block;
+    padding: 20px 10px;
+    line-height: 4rem;
+  }
+
+  .bar i {
+    font-size: 30px;
+    color: white;
   }
 
   #navbar {
-    height: 0px;
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 100px;
     right: 0;
-    width: 100vw;
-    transition: 0.2s;
-    background: black;
-    z-index: 1;
-    margin-left: 0;
-    overflow: hidden;
+    left: 0;
+    bottom: 0;
+ 
+background: #5C5C5C;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    /* transition: 0.4s linear; */
+    margin: 0 auto;
+    height: 0px;
   }
 
   #navbar a {
+    display: none;
+  }
+
+  #navbar.show a {
     display: block;
-    width: fit-content;
-    margin: 70px auto 0 auto;
-    opacity: 0;
-    transition: opacity 0.2s;
+    margin-top: 15px;
   }
 
-  .bar {
-    display: block;
-    padding: 0 20px;
-    cursor: pointer;
-    height: fit-content;
+  #navbar.show {
+    transition: height 0.2s linear;
+    height: 300px;
+    opacity: 1;
+  }
+  header span{
+    display: none;
   }
 
-  .heading {
-    left: 180px;
+  /* all cuisine dishes stlyling */
+
+  .cuisine-dishes #even {
+    flex-direction: column;
   }
 
-  .dropdown {
-    left: 300px;
+  .cuisine-dishes #odd {
+    flex-direction: column;
   }
 }
 
-#navbar.show {
-  height: auto;
-}
-
-#navbar.show a {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 763px) {
-  .heading {
-    left: 200px;
+@media only screen and (max-width: 650px) {
+  header {
+    padding: 0 50px;
   }
 
-  h1 {
+  header h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1.3rem;
+    padding: 50px 20px;
+  }
+
+
+  #cuisines h1{
+   font-size: 2rem;
+  }
+
+
+  .dish-data img {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .dish-data p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .about h1,
+  .cusines h1 {
+    font-size: 1.8rem;
+  }
+
+
+  #cuisines h1{
     font-size: 1.5rem;
+   }
+ 
+  .dish-data img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
   }
 
-  span {
-    font-size: 16px;
+  .dish-data p {
+    font-size: 0.8rem;
   }
 
-  .dropdown {
-    left: 250px;
-  }
+
 }
 
-@media only screen and (max-width: 546px) {
-  .heading {
-    left: 200px;
+@media only screen and (max-width: 399px) {
+  header {
+    padding: 0px;
   }
 
-  h1 {
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  .heading {
+    padding: 0px;
+  }
+  .heading h1 {
+    font-size: 1.4rem;
+  }
+  .heading span {
+    padding: 0px;
     font-size: 1.2rem;
   }
 
-  span {
-    margin-left: 40px;
-    font-size: 12px;
+  .about h1,
+  .cusines h1 {
+    font-size: 1.6rem;
   }
 
-  .dropdown {
-    left: 150px;
+  .about p {
+    font-size: 1rem;
+    padding: 50px 10px;
   }
-
-  #cuisines h1 {
+  .bar i {
     font-size: 25px;
   }
+
+  #cuisines h1{
+    font-size: 1rem;
+   }
+ 
+  .dish-data img {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+ 
+
 }
 
-@media only screen and (max-width: 456px) {
-  .heading {
-    left: 150px;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  span {
-    margin-left: 40px;
-    font-size: 12px;
-  }
-
-  .dropdown {
-    left: 100px;
-  }
-
-  #cuisines h1 {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 394px) {
-  .heading {
-    left: 80px;
-  }
-
-  .dropdown {
-    left: 70px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .heading {
-    left: 50px;
+@media only screen and (max-width: 283px) {
+  header h2 {
+    font-size: 1.3rem;
   }
 
   .heading h1 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+  .heading span {
+    font-size: 1rem;
   }
 
-  .dropdown {
-    left: 40px;
+  .about h1,
+  .cusines h1 {
+    font-size: 1.4rem;
   }
+
+  .about p {
+    font-size: 0.8rem;
+  }
+  .bar i {
+    font-size: 20px;
+  }
+
+  
+ 
+  .dish-data img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .dish-data p {
+    font-size: 0.6rem;
+  }
+
+
+  .cuisine-dishes h1
+  {
+      
+      font-size: 1.7rem;
+      
+      
+    }
+}
+
+@media only screen and (max-width: 195px) {
+  header h2 {
+    font-size: 1rem;
+  }
+
+  .heading h1 {
+    font-size: 1rem;
+  }
+  .heading span {
+    font-size: 0.7rem;
+  }
+
+  .about h1,
+  .cusines h1 {
+    font-size: 1rem;
+  }
+
+  .about p {
+    font-size: 0.6rem;
+  }
+  .dropbtn {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  .dish-data img{
+    height: 400px;
+    width: 500px;
+   
+   }
+ 
+   .dish-data p{
+
+   font-size: 1rem;
+    
+   }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+ 
+  .dish-data img{
+    height: 500px;
+    width: 600px;
+    
+   }
+ 
+   .dish-data p{
+  
+   font-size: 1.2rem;
+    
+   }
+ 
 }

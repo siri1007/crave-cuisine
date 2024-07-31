@@ -3,45 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indian Cuisine</title>
+    <title>Indian-cuisine</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css">
-
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
-    <header id="Indian" class="main-heading">
-      <h2>Indian Cuisine</h2>
-      <nav id="navbar" class="navbar">
-        <!-- <a href="index.html">Home</a> -->
-        <!-- <a href="index.html#about">About</a> -->
-        <a href="index.html#cuisines">Cuisines</a>
-      </nav>
+    <section class="content" id="indian-cuisine">
+      <!-- ===HEADER STARTS===  -->
+      <header>
+        <h2>Indian-Cuisine</h2>
+        <nav id="navbar" class="navbar">
+          <a href="index.html#cuisines">Cuisines</a>
+        </nav>
+        <div class="bar">
+          <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+        </div>
+      </header>
 
-      <div class="bar">
-        <i class="fa-solid fa-bars"></i>
+      <div class="heading">
+        <h1>Welcome to Crave Cuisine</h1>
+        <br /><br/>
+        <span> A place for all cuisines</span>
       </div>
-    </header>
+    </section>
 
+
+<!-- select the dish in your cuisine -->
+ 
     <section id="cuisines">
-      <h1>select your favourite dish of Chinese-cuisine</h1>
-
+      <h1>select your favourite dish of Indian-cuisine</h1>
       <div class="dropdown">
         <button class="dropbtn">
           Cuisines
           <i class="fa fa-caret-down"></i>
         </button>
-
         <div class="dropdown-content">
           <a href="#Biryani">Biryani</a>
           <a href="#Tandoori Chicken">Tandoori Chicken</a>
-          <a href="#MasalaDosa">Masala Dosa          </a>
-          <a href="#Butter Chicken
-">Butter Chicken
-</a>
+          <a href="#MasalaDosa">Masala Dosa </a>
+          <a
+            href="#Butter Chicken
+"
+            >Butter Chicken
+          </a>
         </div>
       </div>
     </section>
 
+
+
+   <!-- Main-cusine selection  -->
     <section id="cuisines">
       <h1>select your main Cuisine</h1>
 
@@ -56,50 +67,84 @@
           <a href="japanese.html">Japanese Cuisine</a>
           <a href="mexican.html">Mexican Cuisine</a>
           <a href="indian.html">Indian Cuisine</a>
-          <!-- <a href="chinese.html">Chinese Cuisine</a>-->
+          <a href="chinese.html">Chinese Cuisine</a>
         </div>
       </div>
     </section>
+   <!-- Main-cusine selection  -->
 
-    <section id="Biryani" class="dish-section">
-      <h2>Biryani</h2>
 
-      <img src="images/Biryani.jpg.webp" alt="">
-      <p>
-        Biryani is a classic South Asian dish known for its fragrant basmati rice layered with marinated meat or vegetables and a blend of aromatic spices. The meat, often chicken, mutton, or fish, is marinated in yogurt and spices before being cooked with partially cooked rice. The dish is typically prepared using a slow-cooking method known as dum, where the pot is sealed to allow flavors to infuse. Biryani is enjoyed with accompaniments like raita (yogurt sauce) and salad, making it a beloved and elaborate dish for special occasions and gatherings.
-        
-      </p>
+
+
+
+    <!-- Cusines dishes and their explanation -->
+    <section class="cuisine-dishes">
+      <h1 >Biryani</h1>
+    
+
+
+      <div class="dish-data" id="odd"  >
+        <img src="images/Biryani.jpg.webp" alt="" />
+        <p>
+          Biryani is a classic South Asian dish known for its fragrant basmati
+          rice layered with marinated meat or vegetables and a blend of aromatic
+          spices. The meat, often chicken, mutton, or fish, is marinated in
+          yogurt and spices before being cooked with partially cooked rice. The
+          dish is typically prepared using a slow-cooking method known as dum,
+          where the pot is sealed to allow flavors to infuse. Biryani is enjoyed
+          with accompaniments like raita (yogurt sauce) and salad, making it a
+          beloved and elaborate dish for special occasions and gatherings.
+        </p>
+      </div>
+
+      <!-- Masala-dosa -->
+
+      <h1>masala-dosa</h1>
+
+      <div class="dish-data"  id="even" >
+        <img src="images/Masala-Dosa.webp" alt="" />
+        <p>
+          Masala Dosa is a popular South Indian dish consisting of a thin,
+          crispy crepe made from a fermented batter of rice and urad dal (black
+          gram lentils). The dosa is spread thinly on a hot griddle and cooked
+          until golden brown and crispy. Inside, it's typically filled with a
+          spiced potato filling made from boiled potatoes seasoned with mustard
+          seeds, turmeric, curry leaves, and sometimes onions and green chilies.
+        </p>
+      </div>
+
+      <h1>Tandoori Chicken</h1>
+
+      <div class="dish-data" id="odd" >
+        <img src="images/tandoori-chicken.webp" alt="" />
+        <p>
+          Tandoori Chicken is a popular Indian dish where chicken pieces are
+          marinated in yogurt and a blend of spices, including cumin, coriander,
+          turmeric, and chili powder. The marinated chicken is traditionally
+          cooked in a tandoor, a clay oven that gives it a characteristic smoky
+          flavor and a slightly crispy exterior. The yogurt in the marinade
+          helps tenderize the chicken, while the spices add layers of aromatic
+          flavor. Tandoori Chicken is often served with mint chutney and onion
+          rings as a starter or main course, and it's enjoyed for its vibrant
+          color and bold taste.
+        </p>
+      </div>
+
+      <h1>Butter Chicken</h1>
+      <div class="dish-data" id="even" >
+        <img src="images/butter-chicken.webp" alt="" />
+        <p>
+          Butter Chicken, or Murgh Makhani, is a quintessential North Indian
+          dish known for its creamy texture and rich flavors. Marinated chicken
+          is traditionally cooked in a tandoor, imparting a smoky flavor. The
+          sauce is made from tomatoes, butter, cream, and spices like fenugreek
+          leaves, creating a velvety base with a hint of sweetness. Once cooked,
+          the chicken is simmered in this sauce until tender, resulting in a
+          dish that's both comforting and indulgent. It's often served with naan
+          or rice, making it a popular choice in Indian cuisine.
+        </p>
+      </div>
     </section>
-
-    <section id="Tandoori Chicken" class="dish-section">
-      <h2>Tandoori Chicken</h2>
-
-  <img src="images/tandoori-chicken.webp" alt="">
-      <p>
-        Tandoori Chicken is a popular Indian dish where chicken pieces are marinated in yogurt and a blend of spices, including cumin, coriander, turmeric, and chili powder. The marinated chicken is traditionally cooked in a tandoor, a clay oven that gives it a characteristic smoky flavor and a slightly crispy exterior. The yogurt in the marinade helps tenderize the chicken, while the spices add layers of aromatic flavor. Tandoori Chicken is often served with mint chutney and onion rings as a starter or main course, and it's enjoyed for its vibrant color and bold taste.
-      </p>
-    </section>
-
-    <section id="MasalaDosa" class="dish-section">
-      <h2>Masala Dosa</h2>
-      <img src="images/Masala-Dosa.webp" alt="">
-      <p>
-        Masala Dosa is a popular South Indian dish consisting of a thin, crispy crepe made from a fermented batter of rice and urad dal (black gram lentils). The dosa is spread thinly on a hot griddle and cooked until golden brown and crispy. Inside, it's typically filled with a spiced potato filling made from boiled potatoes seasoned with mustard seeds, turmeric, curry leaves, and sometimes onions and green chilies.
-      </p>
-    </section>
-
-    <section id="Butter Chicken
-" class="dish-section">
-      <h2>Butter Chicken
-      </h2>
-    <img src="images/butter-chicken.webp" alt="">
-      <p>
-        Butter Chicken, or Murgh Makhani, is a quintessential North Indian dish known for its creamy texture and rich flavors. Marinated chicken is traditionally cooked in a tandoor, imparting a smoky flavor. The sauce is made from tomatoes, butter, cream, and spices like fenugreek leaves, creating a velvety base with a hint of sweetness. Once cooked, the chicken is simmered in this sauce until tender, resulting in a dish that's both comforting and indulgent. It's often served with naan or rice, making it a popular choice in Indian cuisine.
-      </p>
-    </section>
-
-
-
-   
   </body>
 </html>
+

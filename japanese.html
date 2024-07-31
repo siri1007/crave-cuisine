@@ -1,35 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Japanese Cuisine</title>
+    <title>Japanese-cuisine</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
-    <header id="Japanese" class="main-heading">
-      <h2>Japanese Cuisine</h2>
-      <nav id="navbar" class="navbar">
-        <!-- <a href="index.html">Home</a> -->
-        <!-- <a href="index.html#about">About</a> -->
-        <a href="index.html#cuisines">Cuisines</a>
-      </nav>
+    <section class="content" id="japanese-cuisine">
+      <!-- ===HEADER STARTS===  -->
+      <header>
+        <h2>Japanese-Cuisine</h2>
+      
+        <nav id="navbar" class="navbar">
+          <a href="index.html#cuisines">Cuisines</a>
+        </nav>
+      
+      </header>
 
-      <div class="bar">
-        <i class="fa-solid fa-bars"></i>
+      <div class="heading">
+        <h1>Welcome to Crave Cuisine</h1>
+        <br /><br/>
+        <span> A place for all cuisines</span>
       </div>
-    </header>
+    </section>
 
+
+<!-- select the dish in your cuisine -->
+ 
     <section id="cuisines">
-      <h1>select your favourite dish of Chinese-cuisine</h1>
-
+      <h1>select your favourite dish of Japanese-cuisine</h1>
       <div class="dropdown">
         <button class="dropbtn">
           Cuisines
           <i class="fa fa-caret-down"></i>
         </button>
-
         <div class="dropdown-content">
           <a href="#sushi">sushi</a>
           <a href="#Hakata-Ramen">Hakata-Ramen</a>
@@ -39,10 +46,15 @@
 "
             >Tonkotsu-Ramen
           </a>
+            
         </div>
       </div>
     </section>
 
+
+
+
+   <!-- Main-cusine selection  -->
     <section id="cuisines">
       <h1>select your main Cuisine</h1>
 
@@ -61,44 +73,58 @@
         </div>
       </div>
     </section>
+   <!-- Main-cusine selection  -->
 
-    <section id="sushi" class="dish-section">
-      <h2>sushi</h2>
 
-      <img src="images/sushi.webp" alt="" />
-      <p>
-        Sushi is a traditional Japanese dish consisting of vinegared rice, usually served with seafood like raw fish (sashimi), cooked seafood, or vegetables. It's often rolled with seaweed (nori) or served as bite-sized pieces (nigiri). Sushi is appreciated worldwide for its fresh ingredients, meticulous preparation, and diverse flavors and textures.
-      </p>
-    </section>
 
-    <section id="Hakata-Ramen" class="dish-section">
-      <h2>Hakata-Ramen</h2>
 
+
+    <!-- Cusines dishes and their explanation -->
+    <section class="cuisine-dishes">
+      <h1>sushi</h1>
+      <div class="dish-data" id="odd">
+      
+        <img src="images/sushi.webp" alt="" />
+        <p>
+          Sushi is a traditional Japanese dish consisting of vinegared rice, usually served with seafood like raw fish (sashimi), cooked seafood, or vegetables. It's often rolled with seaweed (nori) or served as bite-sized pieces (nigiri). Sushi is appreciated worldwide for its fresh ingredients, meticulous preparation, and diverse flavors and textures.
+        </p>
+     
+      </div>
+
+ 
+      <h1>Hakata-Ramen</h1>
+  
+      
+      
+
+      <div class="dish-data" id="even">
+       
       <img src="images/Hakata-Ramen.webp" alt="" />
       <p>
         Hakata Ramen is a style of ramen originating from the Hakata district of Fukuoka, Japan. It's characterized by its rich, creamy tonkotsu (pork bone) broth, which is simmered for hours to extract deep flavors. The noodles in Hakata Ramen are thin and firm, typically cooked al dente. It's commonly topped with slices of tender chashu (braised pork belly), green onions, and may include other toppings like boiled egg, seaweed, or bamboo shoots. Hakata Ramen is known for its hearty and savory taste, making it a popular choice among ramen enthusiasts worldwide.
       </p>
-    </section>
+   
+      </div>
 
-    <section id="shabu-shabu" class="dish-section">
       <h2>shabu-shabu</h2>
-      <img src="images/shabu-shabu-.webp" alt="" />
-      <p>
-        Shabu-shabu is a Japanese hot pot dish where thinly sliced meat, usually beef or pork, and vegetables are cooked in a simmering broth at the dining table. The name "shabu-shabu" comes from the sound of swishing the meat in the broth with chopsticks, as it cooks quickly due to its thinness. The broth is typically made from kombu (seaweed) and katsuobushi (dried bonito flakes), seasoned lightly with soy sauce or ponzu (citrus-based sauce). Once cooked, the meat and vegetables are dipped in a dipping sauce before eating. Shabu-shabu is enjoyed for its freshness, simplicity, and interactive dining experience.
-      </p>
-    </section>
+      <div class="dish-data" id="odd">
+        <img src="images/shabu-shabu-.webp" alt="" />
+        <p>
+          Shabu-shabu is a Japanese hot pot dish where thinly sliced meat, usually beef or pork, and vegetables are cooked in a simmering broth at the dining table. The name "shabu-shabu" comes from the sound of swishing the meat in the broth with chopsticks, as it cooks quickly due to its thinness. The broth is typically made from kombu (seaweed) and katsuobushi (dried bonito flakes), seasoned lightly with soy sauce or ponzu (citrus-based sauce). Once cooked, the meat and vegetables are dipped in a dipping sauce before eating. Shabu-shabu is enjoyed for its freshness, simplicity, and interactive dining experience.
+        </p>
+      </div>
 
-    <section
-      id="Tonkotsu-Ramen"
+
+      <h1>Tonkotsu-Ramen</h1>
+
     
-
-      class="dish-section"
-    >
-      <h2>Tonkotsu-Ramen</h2>
-      <img src="images/Tonkotsu-Ramen.webp" alt="" />
-      <p>
-        Tonkotsu Ramen is a popular Japanese noodle soup characterized by its rich and creamy broth made from boiling pork bones, fat, and collagen over high heat for several hours. The result is a flavorful broth with a milky white appearance and a robust pork flavor. The noodles used in Tonkotsu Ramen are typically thin and straight, cooked to a firm texture (known as "katame" in Japanese).
-      </p>
+      <div class="dish-data" id="even">
+        <img src="images/Tonkotsu-Ramen.webp" alt="" />
+        <p>
+          Tonkotsu Ramen is a popular Japanese noodle soup characterized by its rich and creamy broth made from boiling pork bones, fat, and collagen over high heat for several hours. The result is a flavorful broth with a milky white appearance and a robust pork flavor. The noodles used in Tonkotsu Ramen are typically thin and straight, cooked to a firm texture (known as "katame" in Japanese).
+        </p>
+        
+      </div>
     </section>
   </body>
 </html>

@@ -1,44 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chinese Cuisine</title>
+    <title>Chinese-cuisine</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
-    <header id="Chinese" class="main-heading">
-      <h2>Chinese Cuisine</h2>
-      <nav id="navbar" class="navbar">
-        <!-- <a href="index.html">Home</a> -->
-        <!-- <a href="index.html#about">About</a> -->
-        <a href="index.html#cuisines">Cuisines</a>
-      </nav>
+    <section class="content" id="chinese-cuisine">
+      <!-- ===HEADER STARTS===  -->
+      <header>
+        <h2>Chinese-Cuisine</h2>
+      
+        <nav id="navbar" class="navbar">
+          <a href="index.html#cuisines">Cuisines</a>
+        </nav>
+        <div class="bar">
+          <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+        </div>
+      </header>
 
-      <div class="bar">
-        <i class="fa-solid fa-bars"></i>
+      <div class="heading">
+        <h1>Welcome to Crave Cuisine</h1>
+        <br /><br/>
+        <span> A place for all cuisines</span>
       </div>
-    </header>
+    </section>
 
+
+<!-- select the dish in your cuisine -->
+ 
     <section id="cuisines">
       <h1>select your favourite dish of Chinese-cuisine</h1>
-
       <div class="dropdown">
         <button class="dropbtn">
           Cuisines
           <i class="fa fa-caret-down"></i>
         </button>
-
         <div class="dropdown-content">
-          <a href="#KungPaoChicken">Kung Pao Chicken</a>
-          <a href="#HotPot">Hot Pot</a>
-          <a href="#Dumplings">Dumplings</a>
-          <a href="#ChowMein">Chow Mein</a>
+            <a href="#KungPaoChicken">Kung Pao Chicken</a>
+            <a href="#HotPot">Hot Pot</a>
+            <a href="#Dumplings">Dumplings</a>
+            <a href="#ChowMein">Chow Mein</a>
         </div>
       </div>
     </section>
 
+
+
+
+   <!-- Main-cusine selection  -->
     <section id="cuisines">
       <h1>select your main Cuisine</h1>
 
@@ -57,44 +70,64 @@
         </div>
       </div>
     </section>
+   <!-- Main-cusine selection  -->
 
-    <section id="KungPaoChicken" class="dish-section">
-      <h2>Kung Pao Chicken</h2>
 
-      <img src="king pao chicken.webp" alt="">
+
+
+
+    <!-- Cusines dishes and their explanation -->
+    <section class="cuisine-dishes">
+        <h1>Kung Pao Chicken</h1>
+      <div class="dish-data" id="odd">
+      
+
+      <img src="images/king pao chicken.webp " alt="">
       <p>
         Kung Pao Chicken is a beloved Sichuan dish known for its bold, spicy flavors and satisfying crunch. It features tender pieces of chicken stir-fried with peanuts, bell peppers, and chili peppers in a savory, tangy sauce. This dish perfectly balances the heat from the chilies with the sweetness of the sauce, creating an irresistible combination. Whether served with steamed rice or noodles, Kung Pao Chicken is a favorite for those who enjoy a flavorful and spicy meal.
         
       </p>
-    </section>
+      </div>
 
-    <section id="HotPot" class="dish-section">
-      <h2>Hot Pot</h2>
+ 
 
-   <img src="hotpot.webp" alt="">
-      <p>
-        Hot Pot is a popular Chinese communal dining experience where a simmering pot of flavorful broth takes center stage. Diners cook a variety of fresh ingredients like thinly sliced meats, seafood, vegetables, and noodles right at the table. This interactive meal allows for endless customization and is perfect for sharing with family and friends. The rich and savory broth, combined with a variety of dipping sauces, makes every bite a unique and delicious adventure.
-      </p>
-    </section>
+      <h1>Hot Pot</h1>
 
-    <section id="Dumplings" class="dish-section">
-      <h2>Dumplings</h2>
-      <img src="dumplings.webp" alt="" />
-      <p>
-       Dumplings are a staple in Chinese cuisine, cherished for their delightful taste and variety. These bite-sized pockets of dough are filled with ground meat, seafood, or vegetables and can be steamed, boiled, or fried. Often enjoyed with dipping sauces, dumplings are a symbol of good fortune and are a must-have for any festive occasion or meal. Their soft, chewy texture and flavorful fillings make them a beloved treat worldwide.
-      </p>
-    </section>
+      <div class="dish-data" id="even">
+       
+   <img src="images/hotpot.webp" alt="">
+   <p>
+     Hot Pot is a popular Chinese communal dining experience where a simmering pot of flavorful broth takes center stage. Diners cook a variety of fresh ingredients like thinly sliced meats, seafood, vegetables, and noodles right at the table. This interactive meal allows for endless customization and is perfect for sharing with family and friends. The rich and savory broth, combined with a variety of dipping sauces, makes every bite a unique and delicious adventure.
+   </p>
+      </div>
 
-    <section id="ChowMein" class="dish-section">
-      <h2>Chow Mein</h2>
-     <img src="chow mein.webp" alt="">
+    
+      <h1>Dumplings</h1>
+      <div class="dish-data" id="odd">
+        <img src="images/tandoori-chicken.webp" alt="" />
+        <p>
+          Tandoori Chicken is a popular Indian dish where chicken pieces are
+          marinated in yogurt and a blend of spices, including cumin, coriander,
+          turmeric, and chili powder. The marinated chicken is traditionally
+          cooked in a tandoor, a clay oven that gives it a characteristic smoky
+          flavor and a slightly crispy exterior. The yogurt in the marinade
+          helps tenderize the chicken, while the spices add layers of aromatic
+          flavor. Tandoori Chicken is often served with mint chutney and onion
+          rings as a starter or main course, and it's enjoyed for its vibrant
+          color and bold taste.
+        </p>
+      </div>
+
+
+      <h1>Chow Mein</h1>
+    
+      <div class="dish-data" id="even">
+        <img src="images/chow mein.webp " alt="">
       <p>
         Chow Mein is a popular Chinese dish featuring stir-fried noodles mixed with a variety of vegetables, meats, or seafood. The noodles are cooked to a perfect al dente texture, then tossed with savory sauces and fresh ingredients to create a harmonious blend of flavors and textures. Whether you prefer it with chicken, beef, shrimp, or just vegetables, Chow Mein is a versatile and satisfying meal that's perfect for any occasion.
       </p>
+       
+      </div>
     </section>
-
-    <!-- <a href="index.html#cuisines"> Cuisines</a> -->
-
-    <!-- <script src="script.js"></script> -->
   </body>
 </html>
